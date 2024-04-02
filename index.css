@@ -1,0 +1,133 @@
+@font-face {
+  font-family: 'Earnogo';
+  src: url('./fonts/UberMoveAR-Bold.woff2');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Earnogo';
+  src: url('./fonts/UberMoveTextAR-Medium.woff2');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Earnogo';
+  src: url('./fonts/UberMoveAR-Regular.woff2');
+  font-weight: 400;
+}
+:root{
+  --fs-normal : .938rem; 
+}
+*{
+  padding: 0%;margin: 0%;
+  text-decoration: none;text-transform: normal;
+  box-sizing: border-box;border: none;outline: none;
+  text-transform: capitalize;list-style: none;
+  color: var(--color-fg-body);
+}
+body{
+  font-family: 'earnogo';
+  transition: .2S linear all;
+}
+:root{
+  --fs-big : 2REM;
+  --fs-h1: 1.5REM;
+  --fs-h2: 1.25REM;
+  --fs-h3: 1REM;
+  --fs-normal :.938REM ;
+  --fs-small :.813REM ;
+  --fs-smaller : .75REM;
+}
+:root{
+  --mb-05:.5REM;
+  --mb-75:.75REM;
+  --mb-10:1.0REM;
+  --mb-15:1.5REM;
+  --mb-20:2.0REM;
+  --mb-25:2.5REM;
+  --mb-30:3.0REM;
+}
+:root{
+  --column-gap-05:.5REM;
+  --column-gap-75:.75REM;
+  --column-gap-10:1.0REM;
+  --column-gap-15:1.5REM;
+  --column-gap-20:2.0REM;
+  --column-gap-25:2.5REM;
+  --column-gap-30:3.0REM;
+}
+:root{
+  --row-gap-05:.5REM;
+  --row-gap-70:.75REM;
+  --row-gap-10:1.0REM;
+  --row-gap-15:1.5REM;
+  --row-gap-20:2.0REM;
+  --row-gap-25:2.5REM;
+  --row-gap-30:3.0REM;
+}
+
+
+
+@media screen and (min-width:968PX) {
+  :root{
+    --fs-big : 2.5REM;
+    --fs-h1: 2.25REM;
+    --fs-h2: 1.5REM;
+    --fs-h3: 1.25REM;
+    --fs-normal :1REM ;
+    --fs-small :.875REM ;
+    --fs-smaller : .813REM;
+  }
+}
+
+
+:root{
+  --color-white : #fff;
+  --color-black : #111;
+  --color-fg-body:#101828;
+  --color-bg-body:#fff;
+  --color-btn-primary:#724DC9;
+}
+body{
+  width: 100%;height: 100VH;
+  /* background-color: #010314; */
+  background-color: #010101;
+  color: #FCFCFC;
+}
+
+section{
+  padding: 2REM 7%;
+}
+section .container{
+  width: 100%;height: auto;
+  position: relative;
+}
+section .container .text__content{
+  text-align: center;
+}
+section .container .text__content h1{
+  color: #FFF;
+  margin-bottom: var(--mb-05);
+  font-size: var(--fs-h1);
+}
+section .container .text__content span{
+font-size: var(--fs-normal);
+color: #FBFBFB;font-size:1.2REM;
+display: block;
+margin-bottom: var(--mb-15);
+}
+section .container .planes{
+  width: 100%;display: grid;
+  grid-template-columns: repeat(auto-fill , minmax(300PX,1FR));
+  gap: 1REM;transition: .2S linear all;
+}
+section .container .planes .plan__card{
+  padding: 1REM;height: 60VH;
+  border-radius: 1.25rem;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(5px);
+  background: hsla(0, 0%, 100%, .035);
+  box-shadow: inset 6px 84px 79px -40px hsla(0,0%,100%,.025), inset 0 -4px 1px -3px hsla(0,0%,100%,.25), inset 0 4px 1px -3px hsla(0,0%,100%,.25);
+}
+section .container .planes .plan__card.active{
+  background: linear-gradient(345deg, var(--token-ee053477-e115-4fec-a5f5-cdc637ed6ddc, #00ccff) /* {"name":"Sky"} */ 0%, var(--token-bd71055c-0a2c-4476-8cc9-4310acba652d, rgb(0, 153, 255)) /* {"name":"Blue"} */ 100%);
+  box-shadow: rgba(255, 255, 255, 0.3) 0px 1px 1px 0px inset, rgba(0, 204, 255, 0.5) 0px 15px 100px 0px;
+}
